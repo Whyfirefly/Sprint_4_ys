@@ -10,9 +10,6 @@ import static constants.ColoursOfScooter.*;
 
 public class OrderPageScooterRent {
 
-  //Локатор логотипа Яндекса
-  private final By yandexLogo = By.xpath("//img[@alt = 'Yandex']");
-
   //Локатор для заголовка страницы про аренду
   private final By titleRentalInfo = By.xpath("//*[@class = 'Order_Header__BZXOb' and text() = 'Про аренду']");
   //Локатор для поля даты доставки
@@ -34,14 +31,6 @@ public class OrderPageScooterRent {
   //добавили конструктор класса page object
   public OrderPageScooterRent(WebDriver driver) {
     this.driver = driver;
-  }
-
-  //метод ожидания загрузки страницы "Для кого самокат"
-  public OrderPageScooterRent waitAboutRentHeader() {
-    new WebDriverWait(driver, 5).until(driver -> (driver.findElement(titleRentalInfo).getText() != null
-            && !driver.findElement(titleRentalInfo).getText().isEmpty()
-    ));
-    return this;
   }
 
   //заполнение даты аренды самоката

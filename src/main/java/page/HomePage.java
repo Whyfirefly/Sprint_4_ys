@@ -29,8 +29,6 @@ public class HomePage {
   private final By numberOrder = By.xpath(".//input[@placeholder='Введите номер заказа']");
   //Локатор кнопки "Go!" при проверке статуса заказа
   private final By buttonGo = By.xpath(".//button[text()='Go!']");
-  //Локатор поля поисковой строки Яндекса
-  private final By yandexField = By.xpath(".//input[@className='arrow__input']");
 
   //добавили конструктор класса page object
   public HomePage(WebDriver driver) {

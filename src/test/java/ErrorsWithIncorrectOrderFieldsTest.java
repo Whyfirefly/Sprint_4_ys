@@ -31,7 +31,7 @@ public class ErrorsWithIncorrectOrderFieldsTest {
   }
 
     @Test
-    public void сlientNameFieldIsEmpty() {
+    public void clientNameFieldIsEmpty() {
       HomePage homePage = new HomePage(driver);
       OrderPageClient aboutClient = new OrderPageClient(driver);
 
