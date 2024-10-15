@@ -50,9 +50,9 @@ public class HomePage {
   }
 
   //метод ожидания загрузки ответа на вопрос
-  public void waitLoadAfterClickQuestion(By accordionLabel) {
-    new WebDriverWait(driver, 6).until(driver -> (driver.findElement(accordionLabel).getText() != null
-            && !driver.findElement(accordionLabel).getText().isEmpty()
+  public void waitLoadAfterClickQuestion(By idQuestion) {
+    new WebDriverWait(driver, 6).until(driver -> (driver.findElement(idQuestion).getText() != null
+            && !driver.findElement(idQuestion).getText().isEmpty()
     ));
   }
 
